@@ -309,4 +309,6 @@ quote:      "Ship the build, log the bugs, GG WP."
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0a0a0a,50:FFB000,100:8B0000&height=120&section=footer" alt="footer wave" />
   <br/>
   <sub><i>"Ship the build, log the bugs, GG WP." — infinity_block</i></sub>
+  <br/>
+  <sub>Last updated: auto</sub>
 </div>
