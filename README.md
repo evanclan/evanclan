@@ -1,7 +1,4 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
-  <img alt="Evan Alferez. I build the software Japanese businesses run on." src="assets/header-light.svg" width="100%">
-</picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg"><img alt="Evan Alferez. I build the software Japanese businesses run on." src="assets/header-light.svg" width="100%"></picture>
 
 <br>
 
@@ -11,50 +8,26 @@ Most of that work is closed-source product and client code, so the public repos 
 
 <br>
 
-### Work
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/sections/work-dark.svg"><img alt="Work" src="assets/sections/work-light.svg" width="100%"></picture>
 
-**[帳場ラボ · Chouba Lab](https://choubalab.com)** &ensp;<sub><code>in app store review</code></sub><br>
-A Shopify app that turns orders, refunds and payout fees into itemised journal entries in freee, with the right consumption-tax category on every line. Shipping allocation and OAuth token rotation are handled so nobody keys in bookkeeping by hand. In production since July 2026.<br>
-<sub>Remix · Shopify App Bridge · Polaris · Prisma · Fly.io · freee API</sub>
-
-**[Sabizu](https://sabizu.com)** &ensp;<sub><code>live</code></sub><br>
-Booking for one-person shops. Every shop gets its own subdomain and QR code, and customers can book without making an account. Double booking is ruled out by a Postgres exclusion constraint in the database, not by application code. Row-level security is verified on all ten tables. Flat monthly price, no commission.<br>
-<sub>Next.js 16 · Supabase · Stripe · Resend · next-intl</sub>
-
-**Happy Island** &ensp;<sub><code>live</code></sub> &ensp;<sub>[App Store](https://apps.apple.com/jp/app/happy-island/id6760802460?l=en-US) · [Google Play](https://play.google.com/store/apps/details?id=com.happyisland.app)</sub><br>
-Parent and teacher messaging for primary-school families. Native on iOS and Android, plus a web dashboard for staff. Both run on one Supabase backend, and the web side is served from Cloudflare Workers through OpenNext.<br>
-<sub>Expo · React Native · Next.js 16 · Supabase · Cloudflare Workers</sub>
-
-**[OpenJLPT](https://github.com/evanclan/OpenJLPT)** &ensp;<sub><code>open source</code></sub><br>
-The JLPT N5–N1 lists, rebuilt properly: 7,811 words, 2,383 kanji and 526 grammar points. 99.7% of words are linked to JMdict, which caught hundreds of wrong readings in the source lists. Each fix is backed by a test. Ships as JSON, CSV, SQLite, Anki, Yomitan, `npm i openjlpt` and `pip install openjlpt`, and is rebuilt monthly and schema-checked in CI.<br>
-<sub>TypeScript · SQLite · JSON Schema · GitHub Actions · CC BY-SA 4.0</sub>
-
-**[raja-r.com](https://www.raja-r.com)** &ensp;<sub><code>live</code></sub><br>
-A rebuild of the site for かえる留学, a study-abroad agency, moved from Jimdo to a static Next.js build without losing the search rankings the old site had earned. All 26 legacy URLs redirect in a single hop, and the redirect map is a check that has to pass before deploy.<br>
-<sub>Next.js 16 · Vercel · Resend · WordPress (headless)</sub>
-
-**Attendance & payroll systems** &ensp;<sub><code>in use at several clients</code></sub><br>
-RFID and QR check-in, payroll calculation, LINE notifications to guardians, and admin dashboards for Japanese schools and businesses. One of them is [public](https://github.com/evanclan/natsuki-attendance).<br>
-<sub>Next.js · Supabase · LINE Messaging API · n8n</sub>
-
-**[Guro Ako](https://www.facebook.com/mgakaguro.page/)** &ensp;<sub><code>since 2021</code></sub><br>
-A content network for Filipino teachers: a 300k-member community, a 200k-subscriber video channel, and the web platform behind them.<br>
-<sub>Next.js · Sanity · YouTube Data API</sub>
+<a href="https://choubalab.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/chouba-lab-dark.svg"><img alt="Chouba Lab: Orders, refunds and payout fees become itemised, tax-correct journal entries in freee." src="assets/cards/chouba-lab-light.svg" width="50%"></picture></a><a href="https://sabizu.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/sabizu-dark.svg"><img alt="Sabizu: Booking for one-person shops. Overlapping slots are rejected by Postgres itself." src="assets/cards/sabizu-light.svg" width="50%"></picture></a>
+<a href="https://apps.apple.com/jp/app/happy-island/id6760802460?l=en-US"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/happy-island-dark.svg"><img alt="Happy Island: School messaging for primary-school families, on iOS, Android and the web." src="assets/cards/happy-island-light.svg" width="50%"></picture></a><a href="https://github.com/evanclan/OpenJLPT"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/openjlpt-dark.svg"><img alt="OpenJLPT: 7,811 words, 2,383 kanji and 526 grammar points, on npm, PyPI and SQLite." src="assets/cards/openjlpt-light.svg" width="50%"></picture></a>
+<a href="https://www.raja-r.com"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/raja-r-dark.svg"><img alt="raja-r.com: A study-abroad agency moved off Jimdo without losing the rankings it had earned." src="assets/cards/raja-r-light.svg" width="50%"></picture></a><a href="https://github.com/evanclan/natsuki-attendance"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/attendance-dark.svg"><img alt="Attendance: RFID and QR check-in, payroll, and LINE alerts to guardians for schools." src="assets/cards/attendance-light.svg" width="50%"></picture></a>
+<a href="https://www.facebook.com/mgakaguro.page/"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/guro-ako-dark.svg"><img alt="Guro Ako: A community, a video channel and a web platform for Filipino teachers." src="assets/cards/guro-ako-light.svg" width="50%"></picture></a><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/ryuugaku-quest-dark.svg"><img alt="Ryuugaku Quest: Right answers are attacks. Missed words respawn through spaced repetition." src="assets/cards/ryuugaku-quest-light.svg" width="50%"></picture>
 
 <br>
 
-### In progress
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/sections/progress-dark.svg"><img alt="In progress" src="assets/sections/progress-light.svg" width="100%"></picture>
 
 - **Chouba Lab for Money Forward.** The same journal engine, pointed at Money Forward. The first live webhook posted a real entry to a production ledger, and it now handles Money Forward's refresh-token rotation race.
 - **RaJA Global Academy.** A bilingual Japanese/English rebuild of a school's website on Next.js, replacing Jimdo.
-- **留学クエスト · Ryuugaku Quest.** A turn-based RPG in Godot 4.7 for Japanese students learning English. Right answers are attacks, and missed words come back through spaced repetition. The zones follow a study-abroad trip: airport, homestay, school, town.
 - **Perception.** A research build that captures four screen streams in parallel and compresses each frame to 30–128 KB, so an agent can learn what someone is actually doing at a desktop.
 
 <br>
 
-### How I work
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/sections/method-dark.svg"><img alt="How I work" src="assets/sections/method-light.svg" width="100%"></picture>
 
-- **Put invariants in the database.** If two bookings must never overlap, Postgres enforces it, not an `if` in a request handler.
+- **Put invariants in the database.** If two bookings must never overlap, Postgres enforces it with an exclusion constraint, not an `if` in a request handler.
 - **A migration should never cost the client their search traffic.** Redirects, canonicals and the sitemap are verified against the live domain before anyone calls it launched.
 - **Keep secrets out of git.** I keep one registry of which account owns which project across my three machines, so neither I nor a coding agent deploys to the wrong one. It stores IDs and variable names only, and a check scans for keys before every commit.
 - **Make the type system enforce translation.** On [evanserv.com](https://www.evanserv.com), a project without both English and Japanese copy fails to compile.
@@ -62,23 +35,24 @@ A content network for Filipino teachers: a 300k-member community, a 200k-subscri
 
 <br>
 
-### Tools
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/sections/stack-dark.svg"><img alt="Stack" src="assets/sections/stack-light.svg" width="100%"></picture>
 
-<sub><b>PRODUCT</b></sub> &ensp;TypeScript · React · Next.js · React Native (Expo) · Remix · Tailwind<br>
-<sub><b>DATA</b></sub> &ensp;PostgreSQL · Supabase (RLS) · Prisma · SQLite · OAuth 2.0<br>
-<sub><b>INFRA</b></sub> &ensp;Vercel · Fly.io · Cloudflare Workers & Tunnel · Netlify · GitHub Actions<br>
-<sub><b>COMMERCE</b></sub> &ensp;Shopify apps · freee · Money Forward · Stripe · LINE Messaging API · Resend<br>
-<sub><b>AI</b></sub> &ensp;Claude · OpenAI · Gemini · MCP servers · n8n · Playwright<br>
-<sub><b>CRAFT</b></sub> &ensp;Godot · After Effects · Premiere Pro · Photoshop · Illustrator
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg"><img alt="Stack: TypeScript, React, Next.js, React Native, Remix, PostgreSQL, Supabase, Prisma, Vercel, Fly.io, Cloudflare Workers, Shopify apps, freee, Money Forward, Stripe, LINE, Claude, OpenAI, Gemini, MCP, n8n, Godot and Adobe tools." src="assets/stack-light.svg" width="100%"></picture>
 
 <br>
 
-### Elsewhere
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/sections/activity-dark.svg"><img alt="Activity" src="assets/sections/activity-light.svg" width="100%"></picture>
 
-[evanserv.com](https://www.evanserv.com) &ensp;·&ensp; [LinkedIn](https://www.linkedin.com/in/evanalferez)
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/evanclan/evanclan/output/activity-dark.svg"><img alt="Contribution activity over the last twelve months" src="https://raw.githubusercontent.com/evanclan/evanclan/output/activity-light.svg" width="100%"></picture>
+
+<br>
+
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/sections/contact-dark.svg"><img alt="Elsewhere" src="assets/sections/contact-light.svg" width="100%"></picture>
+
+[evanserv.com](https://www.evanserv.com) &ensp;·&ensp; [LinkedIn](https://www.linkedin.com/in/evanalferez) &ensp;·&ensp; Happy Island on [App Store](https://apps.apple.com/jp/app/happy-island/id6760802460?l=en-US) and [Google Play](https://play.google.com/store/apps/details?id=com.happyisland.app)
 
 I work in English, 日本語, Cebuano and Tagalog. ご相談は日本語でも英語でもお気軽にどうぞ。
 
 <br>
 
-<sub>Updated October 2026. The header is drawn by <a href="scripts/build_header.py"><code>scripts/build_header.py</code></a>.</sub>
+<sub>Every graphic on this page is drawn by <a href="scripts/draw.py"><code>scripts/draw.py</code></a>. The activity panel is redrawn every morning by GitHub Actions.</sub>
