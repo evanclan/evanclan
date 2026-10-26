@@ -545,8 +545,9 @@ def draw_activity(p, weeks):
     best_day = dt.date.fromisoformat(best[0]).strftime("%b %-d")
     active = sum(1 for _, n, _ in days if n)
 
+    plural = lambda n: f"{n} day" if n == 1 else f"{n} days"
     desc = (f"{total:,} contributions in the last year across {active} active days. "
-            f"Longest streak {longest} days, current streak {current} days.")
+            f"Longest streak {plural(longest)}, current streak {plural(current)}.")
     cell, gap = 12, 3
     gx = W - PAD - len(weeks) * (cell + gap) + gap
     c = Canvas(W, H, "Activity", desc)
@@ -555,7 +556,6 @@ def draw_activity(p, weeks):
     c.text("LAST 12 MONTHS", PAD, PAD + 14, 11.5, "mono-medium", p["label"], tracking=2.2)
     c.text(f"{total:,}", PAD - 3, PAD + 94, 76, "serif", p["name"], tracking=-0.5)
     c.text("contributions", PAD, PAD + 126, 22, "serif-italic", p["lede"])
-    plural = lambda n: f"{n} day" if n == 1 else f"{n} days"
     rows = [("longest streak", plural(longest)), ("current streak", plural(current)),
             ("busiest day", f"{best_day} · {best[1]}")]
     for i, (k, v) in enumerate(rows):
